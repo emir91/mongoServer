@@ -1,9 +1,9 @@
 import express from 'express';
-import ctrl from  '../controllers/students.controller';
+import ctrl from '../controllers/courses.controller';
 
 const router = express.Router();
 
-router.route('/students')
+router.route('/courses')
     .get(ctrl.list);
 
 export default router;
