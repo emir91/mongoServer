@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import config from 'config';
+import config from './config';
 import app from './app';
 
 mongoose.connect(config.mongo, 
@@ -11,5 +11,5 @@ mongoose.connect(config.mongo,
 
 app.listen(config.port, error => {
     if(error) return console.log(error);
-    console.log(`Server is listening on port ${PORT}`);
+    console.log(`Server is listening on port ${config.port}`);
 });
