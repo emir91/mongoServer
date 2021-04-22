@@ -35,7 +35,7 @@ const read = (req, res) => {
 
 const update = (req, res) => {
     const id = req.params.id;
-    Course.findBy(id).exec((err, data) => {
+    Course.findById(id).exec((err, data) => {
         if(err || !data) {
             return res.status(400).json('Course not found');
         } else {
