@@ -4,10 +4,10 @@ My First Server With NodeJS and MongoDB
 this is a simple server in NodeJS and MongoDB
 
 #To run it locally
-1.git clone https://
-2.cd mongoServer
-3.npm install
-4.npm start
+1. git clone https://
+2. cd mongoServer
+3. npm install
+4. npm start
 
 Type http://localhost:5000 in your browser and check it 
 
