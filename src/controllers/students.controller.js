@@ -59,7 +59,7 @@ const remove = (req, res) => {
         } else {
             data.remove((err, data) => {
                 if(err) {
-                    return res.status(400).json('Student not found');
+                    return res.status(400).json(err.message);
                 } else {
                     res.status(200).json('Student deleted.');
                 }
