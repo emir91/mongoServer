@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const StudentSchema = new mongoose.Schema({
     firstName: String,
-    lasteName: String,
+    lastName: String,
     yearOfBirth: Number,
     address: String
 });
